@@ -17,6 +17,7 @@ spec:
       containers:
         - name: api-pod
           image: shubhendu027/test-api:latest
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8990
 
