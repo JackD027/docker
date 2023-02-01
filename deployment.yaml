@@ -1,21 +1,22 @@
 apiVersion: apps/v1
 kind : Deployment
 metadata:
-  name: test-api
+  name: api-deploy
+  labels:
+    app: api
 spec:
   selector:
     matchLabels:
-      app: test-api
+      app: api
   replicas: 2
   template:
     metadata:
       labels:
-        app: test-api
+        app: api
     spec:
       containers:
-        - name: test-api
-          image: test-api
-          imagePullPolicy: IfNotPresent
+        - name: api-pod
+          image: shubhendu027/test-api
           ports:
             - containerPort: 8990
 
