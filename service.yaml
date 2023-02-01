@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: test-api-svc
+  name: api-service
 spec:
   selector:
-    app: test-api
+    app: api
   ports:
-    - protocol: "TCP"
-      port: 8990
+    - protocol: TCP
+      port: 9090
       targetPort: 8990
   type: NodePort
