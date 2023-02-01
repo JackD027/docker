@@ -4,7 +4,7 @@ metadata:
   name: api-k8-svc
 spec:
   selector:
-    app: api-k8
+    app: test-api
   ports:
     - protocol: "TCP"
       port: 8990
