@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: api-pod
-          image: test-api
+          image: shubhendu027/test-api
           ports:
             - containerPort: 8990
 
