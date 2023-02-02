@@ -7,6 +7,6 @@ spec:
     app: api
   ports:
     - protocol: TCP
-      port: 9090
       targetPort: 8990
+      port: 9090
   type: NodePort
